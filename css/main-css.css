@@ -272,7 +272,6 @@ body {
 .articles {
 	position: relative;
 	margin-bottom: 100px;
-	padding:50px 0;
 }
 .articles h2{
    margin-bottom: 70px;
@@ -351,7 +350,6 @@ body {
 .gallery {
    position: relative;
    background-color: var(--main-background); 
-   padding: 80px 0;
 }
 .gallery .image {
    background-color: #FFF;
@@ -415,9 +413,6 @@ body {
 }
 /* End Gallery */
 /* Start Featurs */
-.featurs {
-   padding: 60px 0; 
-}
 .featurs .container {
    display: flex;
 }
@@ -565,7 +560,6 @@ body {
 /* Start Testimonials */
 .testimonials {
    background-color: var(--main-background);
-   padding: 60px 0;
 }
 .testimonials .container {
    display: grid;
@@ -622,9 +616,6 @@ body {
 }
 /* End Testimonials */
 /* Start Team Members */
-.team-members {
-   padding: 60px 0; 
-}
 .team-members .container {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -732,7 +723,6 @@ body {
 }
 .services {
 	background-color: var(--main-background);
-	padding: 60px 0;
 }
 
 .services .container {
@@ -829,9 +819,6 @@ body {
 }
 /* End Services */
 /* Start Skills */
-.skills {
-	padding: 60px 0;
-}
 .skills .container {
    display: flex;
 }
@@ -887,7 +874,6 @@ body {
 /* End Skills */
 /* Start works */
 .works {
-   padding: 60px 0;
    background-color: var(--main-background); 
 }
 .works .container {
@@ -965,7 +951,6 @@ body {
 /* Start Events */
 .events {
    position: relative;
-   padding: 60px 0; 
 }
 .events .container .dots {
    position: absolute;
@@ -1468,7 +1453,12 @@ body {
       float: left;
    }
 }
-/* End Request */
+@media (max-width: 767px) {
+   .money h2 {
+      font-size: 30px;
+   }
+}
+/* End Money */
 /* Start Footer */
 footer {
    background-color: #191919;
@@ -1575,6 +1565,13 @@ footer .copyright {
 footer .copyright i {
    color: red;
 }
+@media (max-width: 767px) {
+   footer .container {
+      width: 90%; 
+      margin: 0 auto;
+   }
+}
+/* End Footer */
 button {
    position: fixed;
    display: none;
@@ -1589,6 +1586,7 @@ button {
    cursor: pointer;
    opacity: .6;
    transition: var(--main-transition);
+   z-index: 9;
 }
 button:hover {
    opacity: 1;
