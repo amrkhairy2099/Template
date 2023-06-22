@@ -1364,7 +1364,6 @@ body {
    flex-direction: column;
 }
 .money > div {
-   width: 100%;
    text-align: center;
    padding: 30px;
 }
@@ -1412,7 +1411,7 @@ body {
    color: #000;
 }
 .money .request form {
-   width: 85%;
+   width: 80%;
    margin: 0 auto;
 }
 .money .request form input {
@@ -1433,21 +1432,20 @@ body {
    min-height: 200px;
    caret-color: var(--main-color)
 } 
-.money .request form input:focus,
-.money .request form textarea:focus {
-   outline: none;
-   border-color: #2196f3;
-   background: #1d83d469;
-}
-.money .request a {
+.money .request form a {
    background-color: var(--main-color);
-   width: 70%;
    color: #FFF;
    font-size: 20px;
    font-weight: bold;
    padding: 16px;
    display: block;
    margin: 5% auto;
+}
+.money .request form input:focus,
+.money .request form textarea:focus {
+   outline: none;
+   border-color: #2196f3;
+   background: #1d83d469;
 }
 @media (min-width: 992px) {
    .money {
