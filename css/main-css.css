@@ -26,7 +26,7 @@ body {
 	position: relative;
 }
 .header .container {
-	position: relative;
+	/* position: relative; */
 	display: flex;
    align-items: center;
 	flex-wrap: wrap;
@@ -388,7 +388,7 @@ body {
    .gallery .image {
       width: 95%;
       float: none;
-      margin: 0 auto 44%;
+      margin: 0 auto 6%;
    }
 }
 @media (min-width: 768px) {
@@ -989,7 +989,7 @@ body {
    
 }
 .events .info .unit:not(.second) {
-   margin-right: 14px;
+   margin-right: 10px;
 }
 .events .info .unit h1 {
    color: var(--main-color); 
@@ -1225,7 +1225,7 @@ body {
 /* Start Top Videos */
 .videos .video {
    display: flex;
-   min-height: 60vh; 
+   /* min-height: 60vh;  */
    border: 1px solid #ddd;
 }
 .videos .video ul {
@@ -1271,18 +1271,23 @@ body {
    background-size: cover;
    border: 10px solid var(--sub-color);
 }
-@media (max-width: 991px),
+/* @media (max-width: 767px) { */
+   /* .videos .video {} */
+   /* .videos .video ul, */
+   /* .videos .video .image {} */
+/* } */
 @media (max-width: 767px) and (max-width: 767px) {
    .videos .video {
-      width: 95%;
-      flex-direction: column-reverse;
-      margin: 0 auto;
+      flex-direction: column;
    }
    .videos .video ul,
    .videos .video .image {
-      width: 100%; 
+      float: none;
+      width: 100%;
+      min-height: 60vh;
    }
 }
+
 /* End Top Videos */
 /* Start Stats */
 .stats {
@@ -1407,7 +1412,7 @@ body {
    color: #000;
 }
 .money .request form {
-   width: 70%;
+   width: 85%;
    margin: 0 auto;
 }
 .money .request form input {
